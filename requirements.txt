@@ -13,6 +13,7 @@ tqdm
 openai
 gradio
 langchain>=0.1.121
+pypdf
 langchain-core
 langchain-text-splitters
 langchain-openai
