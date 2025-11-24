@@ -12,13 +12,13 @@ transformers
 tqdm
 openai
 gradio
-langchain==0.0.242
+langchain
 pypdf
 langchain-core
 langchain-text-splitters
 langchain-openai
 langchain-chroma
-langchain-community
+langchain-community>=0.4.1
 datasets==3.6.0
 matplotlib
 google-generativeai
