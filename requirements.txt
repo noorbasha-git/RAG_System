@@ -1,4 +1,5 @@
 streamlit
+python-3.11.8
 langchain==1.0.8
 langchain-community==0.4.1
 langchain-chroma==1.0.0
