@@ -1,9 +1,9 @@
 
 def load_doc(file):
-    #from langchain.document_loaders import PyPDFLoader
-    from pypdf import PdfReader
+    from langchain.document_loaders import PyPDFLoader
+    #from pypdf import PdfReader
     print(f"file name:{file}")
-    file_data=PdfReader(file)
+    file_data=PyPDFLoader(file).load()
     return file_data
 
 def chunking(file_data,chunk_size=100):
