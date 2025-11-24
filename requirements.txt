@@ -12,7 +12,7 @@ transformers
 tqdm
 openai
 gradio
-langchain
+langchain>=0.1.121
 langchain-core
 langchain-text-splitters
 langchain-openai
