@@ -69,22 +69,17 @@ def get_ans_from_convchain(query,vector_store,api_key,k):
 
     
 if(__name__=="__main__"):
-    import os
-    from dotenv import load_dotenv
-    load_dotenv()
-    api_key=os.getenv("OPENAI_API_KEY")
-    
-    
-    
+    import os  
     import streamlit as st
-    st.subheader("Q&A app for question and answer")
-    st.image("noor.png")
+    st.subheader("T20 match for EXAM preperation??")
+    st.text("No worries we are here to help. Just upload you pdf and query question we will answer you")
+    
     if "vs" not in st.session_state:
         st.session_state.vs=None
     with st.sidebar:
-        #api_key=st.text_input("open AP key:",type='password')
-        #if(api_key):
-        #    os.environ("OPNE_API_KEY")==api_key
+        api_key=st.text_input("open AP key:",type='password')
+        if(api_key):
+            os.environ["OPENAI_API_KEY"]==api_key
         uploaded_file=st.file_uploader("upload a file",
                                        type=["docx","pdf"])
         chunk_size=st.number_input("chunksize:",
@@ -116,5 +111,6 @@ if(__name__=="__main__"):
      if "vs" in st.session_state:
          ans=get_ans_from_convchain(q,vector_store,api_key,k)#retriving using coversationretrive chain
          st.text_area("LLM answer",value=ans['answer'])
+    st.image("noor.jpg")
             
     
