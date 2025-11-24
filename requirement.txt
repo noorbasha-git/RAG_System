@@ -1,8 +1,9 @@
 streamlit
-langchain
+langchain>=0.1.100
 langchain-openai
 tiktoken
 faiss-cpu
 chromadb
 sentence-transformers
 python-dotenv
+pypdf
