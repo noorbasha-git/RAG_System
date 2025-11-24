@@ -1,6 +1,6 @@
 
 def load_doc(file):
-    langchain_community.document_loaders import PyPDFLoader
+    from langchain_community.document_loaders import PyPDFLoader
     #from pypdf import PdfReader
     print(f"file name:{file}")
     file_data=PyPDFLoader(file).load()
