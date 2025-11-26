@@ -14,7 +14,8 @@ def load_doc(file):
     return file_data
 
 def chunking(file_data,chunk_size=100):
-    from langchain.text_splitter import RecursiveCharacterTextSplitter
+   # from langchain.text_splitter import RecursiveCharacterTextSplitter
+    from langchain_text_splitters import RecursiveCharacterTextSplitter
     splitter=RecursiveCharacterTextSplitter(chunk_size=100,chunk_overlap=0)
     chunks=splitter.split_documents(file_data)
     return chunks
