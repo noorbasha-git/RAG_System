@@ -9,3 +9,7 @@ tiktoken
 langchain[all]
 langchain-huggingface
 chromadb
+langchain.chains
+langchain.memory
+langchain.prompts
+langchain.chat_models
