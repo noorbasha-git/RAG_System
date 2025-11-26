@@ -31,7 +31,7 @@ def embedding_cost(file_data):
     return embedd_cost
 
 def embeddings(chunk_data):
-    from langchain.vectorstores import FAISS
+    #from langchain.vectorstores import FAISS
     from langchain.embeddings import HuggingFaceEmbeddings
     
     embeddings=HuggingFaceEmbeddings(model_name = 
