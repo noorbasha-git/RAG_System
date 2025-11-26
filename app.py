@@ -32,7 +32,8 @@ def embedding_cost(file_data):
 
 def embeddings(chunk_data):
     #from langchain.vectorstores import FAISS
-    from langchain.embeddings import HuggingFaceEmbeddings
+    #from langchain.embeddings import HuggingFaceEmbeddings
+    from langchain_huggingface import HuggingFaceEmbeddings
     
     embeddings=HuggingFaceEmbeddings(model_name = 
                                      "sentence-transformers/all-mpnet-base-v2")
