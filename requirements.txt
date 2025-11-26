@@ -8,3 +8,4 @@ sentence-transformers
 openai
 tiktoken
 langchain
+langchain-huggingface
