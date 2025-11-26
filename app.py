@@ -45,13 +45,13 @@ def embeddings(chunk_data):
     return vector_store
     
 def get_ans_from_convchain(query,vector_store,api_key,k):
-    #from langchain.chat_models import ChatOpenAI
-    from langchain.chat_models.openai import ChatOpenAI
+    
+    
     #from langchain.vectorstores import Chroma
     from langchain_community.vectorstores import Chroma
     from langchain.chains import ConversationalRetrievalChain
     from langchain.memory import ConversationBufferMemory
-    #from langchain_openai import ChatOpenAI
+    from langchain.chat_models import ChatOpenAI
     from langchain.prompts import SystemMessagePromptTemplate,ChatPromptTemplate,HumanMessagePromptTemplate
            
             
