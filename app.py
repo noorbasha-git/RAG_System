@@ -1,9 +1,16 @@
 
-def load_doc(file):
+"""def load_doc(file):
     from langchain_community.document_loaders import PyPDFLoader
     #from pypdf import PdfReader
     print(f"file name:{file}")
     file_data=PyPDFLoader(file).load()
+    return file_data"""
+    
+def load_doc(file):
+    from langchain_community.document_loaders import TextLoader
+    
+    print(f"file name: {file}")
+    file_data = TextLoader(file).load()
     return file_data
 
 def chunking(file_data,chunk_size=100):
@@ -72,8 +79,8 @@ def get_ans_from_convchain(query,vector_store,api_key,k):
 if(__name__=="__main__"):
     import os  
     import streamlit as st
-    st.subheader("T20 match for EXAM preperation??")
-    st.text("No worries we are here to help. Just upload you pdf and query question we will answer you")
+    st.subheader("T20 match for EXAM preparation??")
+    st.text("No worries we are here to help. Just upload your text file and query question we will answer you")
     
     if "vs" not in st.session_state:
         st.session_state.vs=None
@@ -82,7 +89,7 @@ if(__name__=="__main__"):
         if(api_key):
             os.environ["OPENAI_API_KEY"]=api_key
         uploaded_file=st.file_uploader("upload a file",
-                                       type=["docx","pdf"])
+                                       type=["docx","pdf","txt"])
         chunk_size=st.number_input("chunksize:",
                                            min_value=50,                                                                       max_value=400,value=250)
         k=st.number_input("k NEighbours:",min_value=4,max_value=20,value=4)
