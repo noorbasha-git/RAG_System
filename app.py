@@ -1,10 +1,10 @@
 
-"""def load_doc(file):
+def load_doc(file):
     from langchain_community.document_loaders import PyPDFLoader
     #from pypdf import PdfReader
     print(f"file name:{file}")
     file_data=PyPDFLoader(file).load()
-    return file_data"""
+    return file_data
     
 def load_doc(file):
     from langchain_community.document_loaders import TextLoader
