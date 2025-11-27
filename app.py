@@ -50,7 +50,7 @@ def get_ans_from_convchain(query,vector_store,api_key,k):
     #from langchain.vectorstores import Chroma
     from langchain_community.vectorstores import Chroma
     from langchain_classic.chains import ConversationalRetrievalChain
-    from langchain.memory import ConversationBufferMemory
+    from langchain_classic.memory import ConversationBufferMemory
     from langchain.chat_models import ChatOpenAI
     from langchain.prompts import SystemMessagePromptTemplate,ChatPromptTemplate,HumanMessagePromptTemplate
            
