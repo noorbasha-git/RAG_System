@@ -6,6 +6,6 @@ faiss-cpu
 sentence-transformers
 openai
 tiktoken
-langchain==1.1.0
+langchain==0.0.350
 langchain-huggingface
 chromadb
