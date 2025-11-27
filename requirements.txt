@@ -1,23 +1,11 @@
-streamlit==1.15.0
-# LangChain and community libraries
-langchain==0.0.134  # Stable version (adjust if needed)
-langchain-community==0.0.1  # Community specific functionality
-# Embedding & model-related libraries
-tiktoken==0.10.0  # Tokenizer for embeddings
-openai==0.27.0  # OpenAI API for language models (e.g., GPT)
-sentence-transformers==2.2.0  # For sentence embeddings
-langchain-huggingface==0.0.10  # HuggingFace embeddings for LangChain
-faiss-cpu==1.7.2  # FAISS for efficient similarity search (alternative to Chroma)
-# Document processing and loaders
-langchain_community==0.0.1  # Community version for specialized loaders
-langchain_text_splitters==0.0.1  # Text splitter (for chunking documents)
-langchain_community.document_loaders==0.0.1  # Community loaders for text and PDF
-# Vector store management (Chroma in this case)
-langchain_community.vectorstores==0.0.1  # Chroma or other community vector stores
-chromadb==0.2.6  # Chroma database for embedding storage
-# For managing environment variables
-python-dotenv==0.20.0
-# Rich for enhanced exception handling in Streamlit (optional but useful)
-rich==10.15.0
-# For other utility and parsing tasks
-pydantic==1.10.2  # For data validation
+streamlit
+langchain-community
+pydantic
+python-dotenv
+faiss-cpu
+sentence-transformers
+openai
+tiktoken
+langchain==1.1.0
+langchain-huggingface
+chromadb
