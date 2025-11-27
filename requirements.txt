@@ -1,6 +1,6 @@
+pip>=25.3
 streamlit==1.15.0
 rich==10.15.0
-langchain-community
 pydantic
 python-dotenv
 faiss-cpu
@@ -10,4 +10,3 @@ tiktoken
 langchain==0.0.350
 langchain-huggingface
 chromadb
-pip>=25.3
