@@ -52,7 +52,7 @@ def get_ans_from_convchain(query,vector_store,api_key,k):
     from langchain_classic.chains import ConversationalRetrievalChain
     from langchain_classic.memory import ConversationBufferMemory
     from langchain_openai import ChatOpenAI
-    from langchain_community.prompts import SystemMessagePromptTemplate,ChatPromptTemplate,HumanMessagePromptTemplate
+    from langchain_core.prompts import SystemMessagePromptTemplate,ChatPromptTemplate,HumanMessagePromptTemplate
            
             
     print(vector_store._collection.count())    
