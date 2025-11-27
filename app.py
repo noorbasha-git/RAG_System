@@ -6,12 +6,12 @@ def load_doc(file):
     file_data=PyPDFLoader(file).load()
     return file_data
     
-"""def load_doc(file):
-    from langchain_community.document_loaders import TextLoader
-    
-    print(f"file name: {file}")
-    file_data = TextLoader(file).load()
-    return file_data"""
+#def load_doc(file):
+ #   from langchain_community.document_loaders import TextLoader
+  #  
+   # print(f"file name: {file}")
+    #file_data = TextLoader(file).load()
+    #return file_data
 
 def chunking(file_data,chunk_size=100):
    # from langchain.text_splitter import RecursiveCharacterTextSplitter
