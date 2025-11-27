@@ -1,12 +1,13 @@
 pip>=25.3
 streamlit==1.15.0
 rich==10.15.0
-pydantic
 python-dotenv
-faiss-cpu
-sentence-transformers
-openai
-tiktoken
-langchain==0.0.350
 langchain-huggingface
-chromadb
+langchain==0.0.134  # Stable version for RAG
+pydantic==1.10.2
+python-dotenv==0.20.0
+faiss-cpu==1.7.2
+sentence-transformers==2.2.0
+openai==0.27.0
+tiktoken==0.10.0
+chromadb==0.2.6
