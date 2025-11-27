@@ -10,3 +10,4 @@ langchain==1.1.0
 langchain-huggingface
 chromadb
 langchain-openai
+pypdf
